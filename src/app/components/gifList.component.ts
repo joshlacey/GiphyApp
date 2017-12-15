@@ -30,20 +30,6 @@ export class GifListComponent {
   searchGifs(query){
     this.gifService.sendSearch(query).subscribe(gif => {
       this.gifs = gif.data
-      console.log(gif.data)
     })
   }
-}
-
-
-interface address {
-  street: string;
-  city: string;
-  state: string;
-}
-
-interface Post {
-  id: number;
-  title: string;
-  body: string;
 }
