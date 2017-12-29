@@ -1,5 +1,7 @@
 # GiphyApp
 
+View the live demo [here](http://giphyapp.s3-website.us-east-2.amazonaws.com/)
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.1.
 
 ## Development server
