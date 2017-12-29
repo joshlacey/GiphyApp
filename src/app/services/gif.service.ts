@@ -10,11 +10,11 @@ export class GifService {
   options: RequestOptions;
 
   constructor(private http: Http) {
-    console.log('posts service initialized')
+    console.log('gif service initialized')
   }
 
   sendSearch(searchQuery: string) {
-    let baseURL = 'http://api.giphy.com/v1/gifs/search?api_key=' + environment.api_key + '&q=' + searchQuery + '&limit20'
+    let baseURL = 'http://api.giphy.com/v1/gifs/search?api_key=' + environment.api_key + '&q=' + searchQuery + '&limit=21'
     return this.http.get(baseURL)
       .map(res => res.json())
   }
